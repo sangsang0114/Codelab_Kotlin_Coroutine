@@ -4,7 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="3c92e9f8-892a-4285-bf8a-acb79db3ee54" name="Changes" comment="Coroutine Try-Catch Exception">
+    <list default="true" id="3c92e9f8-892a-4285-bf8a-acb79db3ee54" name="Changes" comment="Coroutine Cancel">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/Main.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/Main.kt" afterDir="false" />
     </list>
@@ -73,7 +73,7 @@
       <workItem from="1708069253189" duration="1858000" />
       <workItem from="1708315604794" duration="167000" />
       <workItem from="1708316700094" duration="605000" />
-      <workItem from="1708385127673" duration="6372000" />
+      <workItem from="1708385127673" duration="6794000" />
     </task>
     <task id="LOCAL-00001" summary="First Commit - async &amp; await">
       <option name="closed" value="true" />
@@ -91,7 +91,15 @@
       <option name="project" value="LOCAL" />
       <updated>1708496422652</updated>
     </task>
-    <option name="localTasksCounter" value="3" />
+    <task id="LOCAL-00003" summary="Coroutine Cancel">
+      <option name="closed" value="true" />
+      <created>1708496790109</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1708496790109</updated>
+    </task>
+    <option name="localTasksCounter" value="4" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -100,6 +108,7 @@
   <component name="VcsManagerConfiguration">
     <MESSAGE value="First Commit - async &amp; await" />
     <MESSAGE value="Coroutine Try-Catch Exception" />
-    <option name="LAST_COMMIT_MESSAGE" value="Coroutine Try-Catch Exception" />
+    <MESSAGE value="Coroutine Cancel" />
+    <option name="LAST_COMMIT_MESSAGE" value="Coroutine Cancel" />
   </component>
 </project>
