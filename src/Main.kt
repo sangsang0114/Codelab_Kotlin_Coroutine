@@ -3,13 +3,9 @@ import kotlinx.coroutines.*
 
 fun main() {
     runBlocking {
-        try {
-            println(getWeatherReport())
-        } catch (e: AssertionError) {
-            println("Caught exception in runBlocking(): $e")
-            println("Report unavailable at this time")
-        }
-        println("Have a nice day")
+        println("Weather forecast")
+        println(getWeatherReport())
+        println("Have a nice day!")
     }
 }
 
@@ -26,15 +22,10 @@ suspend fun getTemperature(): String {
 
 suspend fun getWeatherReport() = coroutineScope {
     val forecast = async { getForecast() }
-    val temperature = async {
-        try {
-            getTemperature()
-        } catch (e: AssertionError) {
-            println("Caught exception $e")
-            "{ No temperature found}"
-        }
-    }
-    "${forecast.await()} ${temperature.await()}"
+    val temperature = async { getTemperature() }
+    delay(200)
+    temperature.cancel()
+    "${forecast.await()}"
 }
 
 /*
